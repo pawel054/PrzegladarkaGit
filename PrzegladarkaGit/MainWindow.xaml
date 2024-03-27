@@ -6,7 +6,27 @@
         xmlns:local="clr-namespace:PrzegladarkaGit"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#333333">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
 
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Content="Wybierz folder" HorizontalAlignment="left" Padding="10" Margin="10,10,0,0" Grid.Column="0" Height="40" Background="#222222" Foreground="White" Click="OpenFileDialog"/>
+            <Button Background="Transparent" Height="30" Grid.Column="1" BorderThickness="0" Click="Rotate">
+                <Button.Content>
+                    <Image Source="Images/rotate.png"/>
+                </Button.Content>
+            </Button>
+            <Label FontSize="17" Content="Nazwa pliku" Grid.Column="2" Foreground="White" HorizontalContentAlignment="Right" Margin="0,10,10,0" x:Name="Name"/>
+        </Grid>
     </Grid>
 </Window>
