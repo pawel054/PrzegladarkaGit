@@ -9,7 +9,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Images\" />
+    <None Remove="Images\fitscreen.png" />
+    <None Remove="Images\next.png" />
+    <None Remove="Images\originalsize.png" />
+    <None Remove="Images\previous.png" />
+    <None Remove="Images\rotate.png" />
+    <None Remove="Images\zoomin.png" />
+    <None Remove="Images\zoomout.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\fitscreen.png" />
+    <Resource Include="Images\next.png" />
+    <Resource Include="Images\originalsize.png" />
+    <Resource Include="Images\previous.png" />
+    <Resource Include="Images\rotate.png" />
+    <Resource Include="Images\zoomin.png" />
+    <Resource Include="Images\zoomout.png" />
   </ItemGroup>
 
 </Project>
