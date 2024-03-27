@@ -30,5 +30,18 @@ namespace PrzegladarkaGit
         {
 
         }
+
+        private void DisplayImage(int index)
+        {
+            displayedImageIndex = index;
+            Name.Content = imagePaths[index].Split("\\").Last();
+            displayedImage = new BitmapImage();
+            displayedImage.BeginInit();
+            displayedImage.UriSource = new Uri(imagePaths[index]);
+            displayedImage.Rotation = rotation;
+            displayedImage.EndInit();
+            Image.Source = displayedImage;
+            //ResizeImage();
+        }
     }
 }
