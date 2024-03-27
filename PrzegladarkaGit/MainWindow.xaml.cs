@@ -94,12 +94,20 @@ namespace PrzegladarkaGit
 
         private void PreviousPhoto(object sender, RoutedEventArgs e)
         {
-
+            if (displayedImageIndex > 0)
+            {
+                rotation = 0;
+                DisplayImage(displayedImageIndex - 1);
+            }
         }
 
         private void NextPhoto(object sender, RoutedEventArgs e)
         {
-
+            if (displayedImageIndex < imagePaths.Count - 1)
+            {
+                rotation = 0;
+                DisplayImage(displayedImageIndex + 1);
+            }
         }
 
         private void ZoomIn(object sender, RoutedEventArgs e)
