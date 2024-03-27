@@ -16,9 +16,19 @@ namespace PrzegladarkaGit
     /// </summary>
     public partial class MainWindow : Window
     {
+        private List<string> imagePaths = new List<string>();
+        private BitmapImage displayedImage;
+        private int displayedImageIndex = 0;
+        private int size = 100;
+        private Rotation rotation = 0;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void OpenFileDialog(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
