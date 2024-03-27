@@ -41,7 +41,17 @@ namespace PrzegladarkaGit
             displayedImage.Rotation = rotation;
             displayedImage.EndInit();
             Image.Source = displayedImage;
-            //ResizeImage();
+            ResizeImage();
         }
+
+        private void ResizeImage()
+        {
+            if (!originalSizeBtn.IsEnabled)
+                
+            if (!fitBtn.IsEnabled)
+               
+            Size.Content = size.ToString() + "%";
+        }
+
     }
 }

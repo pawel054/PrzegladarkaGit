@@ -71,7 +71,7 @@
                     <Image Source="Images/fitscreen.png"/>
                 </Button.Content>
             </Button>
-            <Button Background="Transparent" Height="31" Grid.Column="4" BorderThickness="0" x:Name="originalBtn" Click="OriginalSize">
+            <Button Background="Transparent" Height="31" Grid.Column="4" BorderThickness="0" x:Name="originalSizeBtn" Click="OriginalSize">
                 <Button.Content>
                     <Image Source="Images/originalsize.png"/>
                 </Button.Content>
