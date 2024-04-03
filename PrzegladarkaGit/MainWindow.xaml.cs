@@ -43,8 +43,6 @@ namespace PrzegladarkaGit
 
                 if (imagePaths.Count > 0)
                 {
-                    fitBtn.IsEnabled = false;
-                    originalSizeBtn.IsEnabled = true;
                     rotation = 0;
                     DisplayImage(0);
                 }
@@ -66,30 +64,14 @@ namespace PrzegladarkaGit
             displayedImage.Rotation = rotation;
             displayedImage.EndInit();
             Image.Source = displayedImage;
-            ResizeImage();
         }
 
-        private void ResizeImage()
-        {
-            if (!originalSizeBtn.IsEnabled)
-                OriginalFit();
-            if (!fitBtn.IsEnabled)
-                //ScreenFit();
-            Size.Content = size.ToString() + "%";
-        }
-
-        private void OriginalFit()
-        {
-            originalSizeBtn.IsEnabled = false;
-            fitBtn.IsEnabled = true;
-            Image.Width = displayedImage.Width;
-            Image.Height = displayedImage.Height;
-            size = 100;
-        }
 
         private void Rotate(object sender, RoutedEventArgs e)
         {
-
+            if (imagePaths.Count == 0) return;
+            rotation = (Rotation)((int)(rotation + 1) % 4);
+            DisplayImage(displayedImageIndex);
         }
 
         private void PreviousPhoto(object sender, RoutedEventArgs e)
@@ -116,16 +98,6 @@ namespace PrzegladarkaGit
         }
 
         private void ZoomOut(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void FitScreen(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void OriginalSize(object sender, RoutedEventArgs e)
         {
 
         }

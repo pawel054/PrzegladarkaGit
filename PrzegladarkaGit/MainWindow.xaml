@@ -66,16 +66,6 @@
                     <Image Source="Images/zoomout.png"/>
                 </Button.Content>
             </Button>
-            <Button Background="Transparent" Height="31" Grid.Column="3" BorderThickness="0" x:Name="fitBtn" Click="FitScreen">
-                <Button.Content>
-                    <Image Source="Images/fitscreen.png"/>
-                </Button.Content>
-            </Button>
-            <Button Background="Transparent" Height="31" Grid.Column="4" BorderThickness="0" x:Name="originalSizeBtn" Click="OriginalSize">
-                <Button.Content>
-                    <Image Source="Images/originalsize.png"/>
-                </Button.Content>
-            </Button>
         </Grid>
     </Grid>
 </Window>
