@@ -56,16 +56,6 @@
                 <ColumnDefinition Width="auto"/>
             </Grid.ColumnDefinitions>
             <Label Content="100%" Foreground="White" Grid.Column="0" x:Name="Size"/>
-            <Button Background="Transparent" Height="31" Grid.Column="1" BorderThickness="0" Click="ZoomIn">
-                <Button.Content>
-                    <Image Source="Images/zoomin.png"/>
-                </Button.Content>
-            </Button>
-            <Button Background="Transparent" Height="31" Grid.Column="2" BorderThickness="0" Click="ZoomOut">
-                <Button.Content>
-                    <Image Source="Images/zoomout.png"/>
-                </Button.Content>
-            </Button>
         </Grid>
     </Grid>
 </Window>

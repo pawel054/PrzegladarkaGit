@@ -91,15 +91,5 @@ namespace PrzegladarkaGit
                 DisplayImage(displayedImageIndex + 1);
             }
         }
-
-        private void ZoomIn(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void ZoomOut(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
